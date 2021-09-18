@@ -3,7 +3,7 @@ Group Name: EZ Money
 
 [MVP Link](https://docs.google.com/document/d/1afL6aVZ3532WXvYtm6nRi8KyuvhgkYpCTHnwKJV5uGE/edit?usp=sharing)
 
-Team Members: 
+Team Members: <br/>
 Kyu Hong Kim (kyuhong2) <br/>
 Aden Krakman (akrak2)<br/>
 Meghna Pillai (mpill2)<br/>
