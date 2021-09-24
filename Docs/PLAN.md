@@ -1,7 +1,7 @@
 Project: Real Time Currency Converter
 
 Sprint 1: 9/19 - 10/3 <br/>
-Learn tech stack as necessary: java, python, HTML/CSS, Materialize tutorials  <br/>
+Learn tech stack as necessary: java, python, HTML/CSS, React <br/>
 Set up environment <br/>
 Research how to collect real time currency conversion data (web scraping, API...) <br/>
 
