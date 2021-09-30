@@ -1,1 +1,6 @@
 Initializing directory
+
+React Tutorial:
+https://www.youtube.com/watch?v=w7ejDZ8SWv8
+https://reactjs.org/tutorial/tutorial.html
+https://www.w3schools.com/REACT/react_intro.asp
