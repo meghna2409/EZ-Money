@@ -1,1 +1,5 @@
 Initializing directory
+
+Python Web Scraper:
+https://github.com/CS196Illinois/Group6-FA21
+
