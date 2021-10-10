@@ -1,1 +1,7 @@
 Initializing directory
+
+Git Tutorials: 
+https://www.youtube.com/channel/UCRA18QWPzB7FYVyg0WFKC6g
+
+HTML/CSS Tutorial: 
+https://www.youtube.com/watch?v=mU6anWqZJcc
