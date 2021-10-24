@@ -11,8 +11,19 @@ function App() {
   return (
     <div className="App">
       <h1>Input</h1>
-      <input type = "text" onChange={getData}></input>
-      <h1>Output: {data}</h1>
+      <input type = "number" onChange={getData}></input>
+      <select>
+        <option value = "USD">USD</option>
+        <option value = "EUR">EUR</option>
+        </select>
+      <h1>Output</h1>
+      <label>
+        {data} {" "}  
+      <select>
+        <option value = "USD">USD</option>
+        <option value = "EUR">EUR</option>
+        </select>
+      </label>
     </div>
   );
 }
