@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import GroupButtons from './GroupButtons';
 
 function App() {
   const [data, setData] = useState(null)
@@ -8,22 +8,27 @@ function App() {
     setData(val.target.value)
     console.warn(val.target.value)
   }
+  const USD = true;
+
   return (
     <div className="App">
-      <h1>Input</h1>
+      <h1>Currency Converter</h1>
+      <h2>1 {USD ? 'United States Dollar' : 'Euro'} equals</h2>
+      <h1> {data} Euro</h1>
+      <input type = "number" onChange={getData}></input>
+      <select>
+        <option value = "USD">USD</option>
+        <option value = "EUR">EUR</option>
+      </select>
+      <br></br>
+      <br></br>
       <input type = "number" onChange={getData}></input>
       <select>
         <option value = "USD">USD</option>
         <option value = "EUR">EUR</option>
         </select>
-      <h1>Output</h1>
-      <label>
-        {data} {" "}  
-      <select>
-        <option value = "USD">USD</option>
-        <option value = "EUR">EUR</option>
-        </select>
-      </label>
+      <br></br>
+      <br></br>
     </div>
   );
 }
