@@ -19,6 +19,13 @@ function App() {
       <select>
         <option value = "USD">USD</option>
         <option value = "EUR">EUR</option>
+        <option value = "NZD">NZD</option>
+        <option value = "AUD">AUD</option>
+        <option value = "SGD">SGD</option>
+        <option value = "CAD">CAD</option>
+        <option value = "CHF">CHF</option>
+        <option value = "GBP">GBP</option>
+        <option value = "KWD">KWD</option>
       </select>
       <br></br>
       <br></br>
@@ -26,7 +33,13 @@ function App() {
       <select>
         <option value = "USD">USD</option>
         <option value = "EUR">EUR</option>
-        </select>
+        <option value = "NZD">NZD</option>
+        <option value = "SGD">SGD</option>
+        <option value = "CAD">CAD</option>
+        <option value = "CHF">CHF</option>
+        <option value = "GBP">GBP</option>
+        <option value = "KWD">KWD</option>
+      </select>
       <br></br>
       <br></br>
     </div>
