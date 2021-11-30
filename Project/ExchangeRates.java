@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class CurrencyConverter {
+public class ExchangeRates {
 	static final String SERVICE_URL = "http://apilayer.net/api/live?access_key=81966625cdcf4630269b0f664d94dc0a";
 	// Prints results of pattern matches.
 	static final boolean DEBUG = false;
@@ -36,6 +36,11 @@ public class CurrencyConverter {
 		
 		if (DEBUG) System.out.println("Service response:");
 		if (DEBUG) System.out.println(data);
+
+        // Parse the response data for a single currency exchange rate
+		System.out.println("Get exchange rate for a single currency:");
+		System.out.println( "THB = "+parseRate("THB", data) );
+		System.out.println( "JPY = "+parseRate("JPY", data) );
 		
 		// Get all exchange rates
 		System.out.println("All exchange rates from the service:");
