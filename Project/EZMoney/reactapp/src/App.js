@@ -15,7 +15,7 @@ function App() {
       <h1>Currency Converter</h1>
       <h2>1 {USD ? 'United States Dollar' : 'Euro'} equals</h2>
       <h1> {data} Euro</h1>
-      <input type = "number" min="0" onChange={getData}></input>
+      <input type = "number" min="0" step="5" onChange={getData}></input>
       <select>
         <option value = "USD">USD</option>
         <option value = "EUR">EUR</option>
@@ -29,7 +29,7 @@ function App() {
       </select>
       <br></br>
       <br></br>
-      <input type = "number" onChange={getData}></input>
+      <input type = "number" min="0" step="5" onChange={getData}></input>
       <select>
         <option value = "USD">USD</option>
         <option value = "EUR">EUR</option>
