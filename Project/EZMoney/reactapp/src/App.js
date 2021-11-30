@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-// import GroupButtons from './GroupButtons';
+import GroupButtons from './GroupButtons';
 
 function App() {
   const [data, setData] = useState(null)
