@@ -1,6 +1,7 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import $ from 'jquery';
 
 const Button = styled.button`
   background-color: #3939ab;
@@ -27,7 +28,17 @@ function App() {
     console.warn(val.target.value)
   }
   const USD = true;
-  
+  // get the most recent exchange rates via the "live" endpoint:
+  useEffect(() => {
+    // set endpoint and your access key
+  const endpoint = 'live';
+  const access_key = '245fcf7139eca8df2a3bae575321e777';
+  const source = 'GBP';
+  const format = '1';
+  $.get('https://api.currencylayer.com/' + endpoint + '&source=' + source + '?access_key=' + access_key + '&format=' + format, function(data) {
+  let jsonData = JSON.stringify(data);
+});
+  });
   return (
     <div className="App">
       <h1>Currency Converter</h1>
