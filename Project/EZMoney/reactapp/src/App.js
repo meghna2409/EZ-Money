@@ -19,70 +19,7 @@ const Button = styled.button`
 `
 
 function App() {
-//   const [data, setData] = useState(null)
-//   function getData(val) {
-//     setData(val.target.value)
-//     console.warn(val.target.value)
-//   }
-//   // const USD = true;
-//   // // get the most recent exchange rates via the "live" endpoint:
-//   // // set endpoint and your access key
-//   // const endpoint = 'live';
-//   // const access_key = '245fcf7139eca8df2a3bae575321e777';
-//   // const format = '1';
-//   // var jsonData = "hello";
-//   // jsonData = $.get('http://api.currencylayer.com/' + endpoint + '?access_key=' + access_key + '&format=' + format, function(data) { 
-//   // })
-//   // var myData = useRef(jsonData);
-//   // alert(jsonData);
-//   var d;
-//   useEffect(() => {
-//     fetch('http://api.currencylayer.com/live?access_key=245fcf7139eca8df2a3bae575321e777%27')
-//       // .then(res => res.json())
-//       .then(data => d = JSON.stringify(data))
-//   }, [])
-//   alert(d)
-//   // JSON.stringify()?
-//   return (
-//     <div className="App">
-//       <h1>Currency Converter</h1>
-//       <h2>1 {USD ? 'United States Dollar' : 'Euro'} equals</h2>
-//       <h1> {data} Euro</h1>
-//       <input type = "number" min="0" step="5" onChange={getData}></input>
-//       <select>
-//         <option value = "USD">USD</option>
-//         <option value = "EUR">EUR</option>
-//         <option value = "NZD">NZD</option>
-//         <option value = "AUD">AUD</option>
-//         <option value = "SGD">SGD</option>
-//         <option value = "CAD">CAD</option>
-//         <option value = "CHF">CHF</option>
-//         <option value = "GBP">GBP</option>
-//         <option value = "KWD">KWD</option>
-//       </select>
-//       <br></br>
-//       <br></br>
-//       <input type = "number" min="0" step="5" onChange={getData}></input>
-//       <select>
-//         <option value = "USD">USD</option>
-//         <option value = "EUR">EUR</option>
-//         <option value = "NZD">NZD</option>
-//         <option value = "SGD">SGD</option>
-//         <option value = "CAD">CAD</option>
-//         <option value = "CHF">CHF</option>
-//         <option value = "GBP">GBP</option>
-//         <option value = "KWD">KWD</option>
-//       </select>
-//       <br></br>
-//       <br></br>
-//       <Button onClick={click}>
-//         Convert
-//       </Button>
-//       {/* <div ref={jsonData}></div> */}
-//     </div>
-//   );
-// }
-  const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=844fdf07d74d23e41223ca0e2fcee510'
+  const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=9382c6ab600b6a7e916ee70a387062a4'
   const [currencyOptions, setCurrencyOptions] = useState([])
   const [fromCurrency, setFromCurrency] = useState()
   const [toCurrency, setToCurrency] = useState()
