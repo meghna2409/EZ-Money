@@ -17,15 +17,17 @@ const Button = styled.button`
     background-color: #283593;
   }
 `
-
+// citation: https://github.com/WebDevSimplified/React-Currency-Converter
 function App() {
-  const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=9382c6ab600b6a7e916ee70a387062a4'
+
+  const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=844fdf07d74d23e41223ca0e2fcee510'
   const [currencyOptions, setCurrencyOptions] = useState([])
   const [fromCurrency, setFromCurrency] = useState()
   const [toCurrency, setToCurrency] = useState()
   const [exchangeRate, setExchangeRate] = useState()
   const [amount, setAmount] = useState(1)
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
+  const [currencyRates, setCurrenyRates] = useState()g
 
   let toAmount, fromAmount
   if (amountInFromCurrency) {
