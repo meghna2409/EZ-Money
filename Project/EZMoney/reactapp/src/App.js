@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState, useRef } from 'react';
+import { Message } from 'semantic-ui-react'
 import styled from 'styled-components';
-import $ from 'jquery';
 import CurrencyRow from './CurrencyRow'
 const Button = styled.button`
   background-color: #3939ab;
@@ -134,7 +134,25 @@ function App() {
 
   return (
     <>
-      <h1>Convert</h1>
+      <div className="banner">
+        <div>
+          <h1 className="title"> EZMoney </h1>
+          <h4 className="title-text"> kyu || aden || youngbo || meghna || eesha </h4>
+          <h3 className="title-text"> <i> ~ serving you real time currency exchange ~ </i> </h3>
+        </div>  
+      </div>
+      <h1 className="title-text-2">Convert</h1>
+
+      <Message className="message">
+        <Message.Header> <b>How to Use Our Feature </b></Message.Header>
+        <Message.List>
+          <p>Toggle the dropdown menus to convert between any two currencies. For more specific conversions, feel free to 
+            input a specific amount and the conversion will occur instantaneously.
+          </p>
+        </Message.List>
+      </Message>
+
+      <div className="row">
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
@@ -142,7 +160,7 @@ function App() {
         onChangeAmount={handleFromAmountChange}
         amount={fromAmount}
       />
-      <div className="equals">=</div>
+      <div className="title-text-2">=</div>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
@@ -150,6 +168,7 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
+      </div>
     </>
   );
 }

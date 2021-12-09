@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=PT+Sans&family=PT+Sans+Caption&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.banner {
+  background-image: url('https://wallpapercave.com/wp/wp8375012.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.title {
+  font-family: 'PT Sans Caption', cursive;
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 7%;
+}
+
+.title-text {
+  font-family: 'PT Sans', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.title-text-2 {
+  font-family: 'PT Sans Caption', cursive;
+  color: #3939ab;
+  font-size: 50px;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  background-color: #CECEE9;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 1%;
+}
+
+.row {
+  text-align: center;
 }
