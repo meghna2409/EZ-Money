@@ -18,9 +18,6 @@ const Button = styled.button`
   }
 `
 
-function click() {
-  alert("clicked");
-}
 function App() {
 //   const [data, setData] = useState(null)
 //   function getData(val) {
@@ -141,7 +138,7 @@ function App() {
           <h3 className="title-text"> <i> ~ serving you real time currency exchange ~ </i> </h3>
         </div>  
       </div>
-      <h1 className="title-text-2">Convert</h1>
+      <h1 className="title-text-2">Currency Converter</h1>
 
       <Message className="message">
         <Message.Header> <b>How to Use Our Feature </b></Message.Header>
